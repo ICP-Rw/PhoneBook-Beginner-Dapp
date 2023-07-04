@@ -13,12 +13,34 @@
       <img src="logo2.svg" alt="DFINITY logo" />
       <br />
       <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
+      <div class="container">
+        <div class="form-container">
+          <h2>Add Contact</h2>
+          <form id="contactForm" class="form-example">
+            <div class="form-example">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required>
+            </div>
+            <br>
+            <div class="form-example">
+
+              <label for="description">Description:</label>
+              <input type="text" id="description" required>
+            </div>
+            <br>
+            <div class="form-example">
+              <label for="number">Number:</label>
+              <input type="text" id="number" required>
+              <br>
+            </div>
+            <button type="submit">Add Contact</button>
+          </form>
+        </div>
+        <div class="card-container">
+          <h2>Contacts</h2>
+          <div id="cardContainer"></div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
